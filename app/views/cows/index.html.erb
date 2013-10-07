@@ -1,0 +1,5 @@
+<h1>All Cows go Moo</h1>
+
+<% @cows.each do |cow| %>
+  <%= link_to cow[:name], cow_path(cow[:id]) %><br />
+<% end %>
